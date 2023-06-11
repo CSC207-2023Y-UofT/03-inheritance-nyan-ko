@@ -75,6 +75,7 @@ public class CrossbodyBag extends Bag {
     @Override
     public String toString() {
         String newString = "Crossbody Bag with " + numberOfStraps + " straps";
-        return super.toString().replace("Bag", newString);
+        return getColor() + " " + newString + " (" + getNumberOfContents() + " / " +
+                getCapacity() + ")";
     }
 }
